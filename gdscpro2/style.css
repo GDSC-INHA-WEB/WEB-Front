@@ -1,0 +1,371 @@
+/*font start*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+
+@font-face{
+    font-family: Google-Bold;
+    src:url(./fonts/Google-Sans-Bold.woff) format('woff');
+    font-weight:500;
+}
+@font-face{
+    font-family: Google-Light;
+    src:url(./fonts/Google-Sans-Light.woff) format('woff');
+    font-style: italic;
+    font-weight: lighter;
+}
+/*font end*/
+
+/*page2 start*/
+.page_2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.landing_page_2_title {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 11.875%;
+    left: 5.28%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35.41px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.landing_page_2_sub {
+    position: absolute;
+    top: 17.875%;
+    left: 5.28%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.51px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    opacity: 80%;
+    color: #e4e8ebcc;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.swiper {
+    position: absolute;
+    width: 84.259%;
+    height: 34.75%;
+    top: 30.75%;
+    left: 5.28%;
+    overflow: visible;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    justify-content: center;
+}
+
+.imageSlide {
+    position: absolute;
+    width: 92.639%;
+    height: 62.95%;
+    top: 0;
+    left: 0;
+}
+
+.swiper-slide img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.image-back {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+}
+
+.swiper-slide-active img {
+    opacity: 0.6;
+}
+
+.image_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-family: "Google Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.53px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.16);
+}
+
+.landing_page_2_list {
+    margin-top: 0;
+    position: absolute;
+    top: 69.4%;
+    left: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19.07px;
+    font-weight: 300;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 20px;
+    opacity: 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+.swiper-slide-active ul {
+    opacity: 1;
+}
+
+.landing_page_2_list li {
+    margin-bottom: 5.036%;
+    box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.16);
+}
+
+.landing_page_2_caution {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    position: absolute;
+    top: 67.75%;
+    left: 5.28%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 10.55px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #e4e8eb80;
+    opacity: 80%;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
+}
+/*page2 end*/
+
+
+/*page3,4 start*/
+body { /*배경 이미지*/
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* 스크롤 막기 */
+    background-image: url('/img/background_image.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: scroll;
+    height: 100%; 
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+    z-index: -1; 
+}
+
+.animation-container {
+    position: absolute; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    animation: moveUpDown 2s linear infinite; 
+}
+
+footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    background-size: cover;
+    background-repeat: no-repeat; 
+    z-index: 2;
+}
+
+
+img { /*움직이는 화살표 이미지*/
+    position: absolute;
+    bottom:100px;
+    width: 60px;
+    height: 40px;
+    opacity: 0; /* 초기에 투명하게 설정 */
+    animation: fadeInOut 2s linear infinite; /* 나타나고 사라지는 애니메이션 설정 */
+}
+
+.button-container {
+    position:fixed;
+    bottom:40px;
+    width: 320px;
+    height: 33px; /* 버튼을 수직 가운데 정렬할 높이 설정 */
+    display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin: 0 16px; /* 요소 간의 간격 설정 (예: 좌우 10px 여백) */
+
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color:white;
+    font-family: Google-Bold;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 30px; /* 모서리 둥근 직사각형 버튼 모양 설정 */
+    padding: 13px 20px;
+    background-color: transparent; /* 배경색 없음 */
+    cursor: pointer;
+    outline: none;
+}
+
+.shadow {
+    position: fixed; /* 고정 위치로 설정 */
+    bottom: 0; /* 페이지 하단에 고정 */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 100%;
+    height: 106px; /* 원하는 블러 처리된 요소의 높이 설정 */
+    background-color: #0f1116; /* 블러 처리된 배경 색상 설정 */
+    backdrop-filter: blur(10px); /* 블러 처리 경계선 추가 */
+    box-shadow: 0 0 15px 20px #0f1116, 0 0 30px 30px #0f1116;
+    z-index: 0;
+}
+
+/*화살표 애니메이션*/
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* 움직임 크기 및 방향 조절 */
+    }
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1; /* 나타났다 사라지는 애니메이션 설정 */
+    }
+}
+
+
+.page3, .page4{
+    color:white;
+    z-index: 2;
+}
+
+.page4{
+    margin-bottom: 40%; /*가장 아래 높이 지정*/
+}
+
+
+.page3 .title, .page4 .title{
+    text-align: left;
+    margin-left: 2rem;
+    font-family: 'Open Sans', sans-serif; /*타이틀 폰트*/
+    font-size:26px;
+    font-weight: bolder;
+}
+.page3 .title{
+    margin-top: 10rem;
+    margin-bottom: 15vh;
+    text-align: left;
+    margin-left: 2rem;
+}
+.page4 .title{
+    margin-top: 10rem;
+    margin-bottom: 5vh;
+}
+
+.page3 .content {
+    color:#e4e8ebcc;
+    text-align: left;
+    margin-left: 2rem;
+    font-family: Google-Light; /*페이지3 내용 폰트*/
+    font-size: 13px;
+    line-height: 2;
+}
+.page4 .content{
+    text-align: center;
+}
+
+.con_title1, .con_title2, .con_title3{
+    margin-top: 10%; /*세가지 요소 간의 간격*/
+    font-family: 'Open Sans', sans-serif; /*페이지4 내용 제목 폰트*/
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+}
+.con_text1, .con_text2, .con_text3{
+    font-family: "Open Sans", sans-serif;
+    margin-top: -20px; /*글자간격*/
+    font-weight: lighter;
+    font-size: 14px;
+    color:#e4e8ebcc;
+}
+
+.con_title1, .con_text1{
+    margin-left: -35%;
+}
+.con_title2, .con_text2{
+    text-align: center;
+}
+.con_title3, .con_text3{
+    margin-left: 45%;
+}
+
+.plus{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-family: Google-Light lighter;
+    font-size: 50px;
+    font-weight: lighter;
+}
+.plus_content{
+    color:#e4e8ebcc;
+    margin:0 auto;
+    text-align: center;
+    font-family: Google-Light;
+    line-height: 25px;
+    font-size: 13px;
+    border-color:#e4e8ebcc;;
+    width: 220px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 10px; /* 모서리 둥근 직사각형 버튼 모양 설정 */
+    padding: 20px;
+    background-color: rgba(17, 21, 27, 0.8); 
+}
+/*page3,4 end*/
+
+
+
+
