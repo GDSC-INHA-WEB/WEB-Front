@@ -12,7 +12,6 @@ const swiper = new Swiper(".swiper", {
 
   //slideSpeed
   speed: 1500,
-
 });
 
 window.addEventListener("scroll", function () {
@@ -29,8 +28,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
 let idx = 0;
 let startY;
 let isScrolling = false;
@@ -38,11 +35,11 @@ let isScrolling = false;
 const select = document.querySelector(".background");
 const inner = select.querySelectorAll(".page1, .page2, .page3, .page4");
 
-$(window).on('touchstart', function(e) {
+$(window).on("touchstart", function (e) {
   startY = e.originalEvent.touches[0].clientY;
 });
 
-$(window).on('touchmove', function(e) {
+$(window).on("touchmove", function (e) {
   if (isScrolling) return; // 이미 스크롤 중이면 무시
   isScrolling = true;
 
@@ -55,14 +52,20 @@ $(window).on('touchmove', function(e) {
     idx = Math.min(idx + 1, inner.length - 1);
   }
 
-  $('html,body').stop().animate({
-    scrollTop: $(inner[idx]).offset().top // 다음 페이지의 시작 위치로 스크롤
-  }, 600, function() {
-    isScrolling = false;
-  });
+  $("html,body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $(inner[idx]).offset().top, // 다음 페이지의 시작 위치로 스크롤
+      },
+      600,
+      function () {
+        isScrolling = false;
+      }
+    );
 
   // 스크롤 감쇠
-  setTimeout(function() {
+  setTimeout(function () {
     isScrolling = false;
   }, 100);
 });
