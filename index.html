@@ -15,9 +15,10 @@
   </head>
 
   <body>
-    <div class="background">
+    <div class="swiper-container" id="background">
+      <div class="swiper-wrapper" id="background_swiper_wrapper">
       <!-- landing_page_1 start -->
-      <div class="page1">
+      <div class="swiper-slide" id="page1">
         <!-- landing_page_1 header -->
         <div class="page1_header">
           <div class="page1_header_logo">
@@ -57,7 +58,7 @@
       </div>
 
       <!-- landing_page_2 start -->
-      <div class="page2">
+      <div class="swiper-slide" id="page2">
         <!-- landing_page_2 title -->
         <div class="page2_title">우리가 하는 일</div>
         <!-- landing_page_2 sub -->
@@ -66,11 +67,11 @@
           프로젝트, 스터디, 아이디어톤 등 다양한 활동들을 준비 중입니다
         </div>
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper-container" id="page2_swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" id="page2_swiper_wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="page2_swiper_slide1">
               <div class="page2_swiper_image">
                 <div class="page2_swiper_innertext">스터디</div>
                 <img src="img/landing_page_2_image_1.jpg" alt="image_1" />
@@ -174,7 +175,7 @@
                 </li>
               </ul>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="page2_swiper_slide2">
               <div class="page2_swiper_image">
                 <div class="page2_swiper_innertext">프로젝트</div>
                 <img src="img/landing_page_2_image_2.jpg" alt="image_2" />
@@ -186,7 +187,7 @@
                 <li>성과 공유회</li>
               </ul>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" id="page2_swiper_slide3">
               <div class="page2_swiper_image">
                 <div class="page2_swiper_innertext">세미나</div>
                 <img src="img/landing_page_2_image_3.jpg" alt="image_3" />
@@ -209,7 +210,7 @@
       </div>
 
       <!--landing_page_3,4 start-->
-      <div class="page3">
+      <div class="swiper-slide" id="page3">
         <div class="page3_title">
           <p>지금 GDSC 멤버가 되면?</p>
         </div>
@@ -259,7 +260,7 @@
         </div>
       </div>
 
-      <div class="page4">
+      <div class="swiper-slide" id="page4">
         <div class="page4_title">
           <p>커뮤니티 X 네트워킹</p>
         </div>
@@ -294,25 +295,26 @@
           </p>
         </div>
       </div>
+    </div>
+    
+     <!-- arrow -->
+     <div class="page1_arrow_container">
+      <img id="arrow" src="img/downside_arrow.png" alt="움직이는 이미지" />
+    </div>
+    <!-- button -->
+    <div
+      class="button-container"
+      onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeUB0DdVELYMErmbDPD3RjVabQ58F1aZOTwkbn47etNqGUu2Q/viewform';"
+    >
+      GDSC INHA 함께하기 ➔
+    </div>
+    <!--footer background-->
+    <div class="shadow"></div>
 
-      <!-- arrow -->
-      <div class="page1_arrow_container">
-        <img id="arrow" src="img/downside_arrow.png" alt="움직이는 이미지" />
-      </div>
-      <!-- button -->
-      <div
-        class="button-container"
-        onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeUB0DdVELYMErmbDPD3RjVabQ58F1aZOTwkbn47etNqGUu2Q/viewform';"
-      >
-        GDSC INHA 함께하기 ➔
-      </div>
-      <!--footer background-->
-      <div class="shadow"></div>
+    <div class="empty"></div>
 
-      <div class="empty"></div>
-
-      <!-- landing_page_2_js -->
-      <script src="script.js"></script>
+    <!-- landing_page_2_js -->
+    <script src="script.js"></script>
     </div>
   </body>
 </html>
