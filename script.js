@@ -43,13 +43,18 @@ $(window).on("touchmove", function (e) {
   if (isScrolling) return; // 이미 스크롤 중이면 무시
   isScrolling = true;
 
-  const deltaY = e.originalEvent.touches[0].clientY - startY;
-  const scrollAmount = 100; // 스크롤 감도 조절
+  const scrollDistance = e.originalEvent.changedTouches[0].clientY - startY;
 
-  if (deltaY > 0) {
+  const htmlFontSize = parseFloat($("html").css("font-size"));
+  const remScrollDistance = scrollDistance / htmlFontSize;
+  const remInnerHeight = inner[idx].clientHeight / htmlFontSize;
+
+  if (remScrollDistance > remInnerHeight / 60) {
     idx = Math.max(idx - 1, 0);
-  } else {
+  } else if (-remScrollDistance > remInnerHeight / 60) {
     idx = Math.min(idx + 1, inner.length - 1);
+  } else {
+    idx = idx;
   }
 
   $("html,body")
