@@ -318,7 +318,7 @@ body {
   background-color: black;
 }
 
-.swiper-slide-active img {
+#page2_swiper > .swiper-slide-active img {
   opacity: 0.6;
 }
 
