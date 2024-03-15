@@ -424,7 +424,7 @@ body {
 .page1_arrow_container {
   z-index: 60;
   position: fixed;
-  bottom: 16.3rem;
+  bottom: 13rem;
   left: 0;
   right: 0; /* 하단에 위치 */
   margin: 0 auto;
@@ -458,15 +458,15 @@ body {
   position: fixed;
   left: 0;
   right: 0; /* 하단에 위치 */
-  margin: 0 auto 7.375rem auto;
+  margin: 0 auto 2.5rem auto;
   /* justify-content: center;
   align-items: center; */
   background-size: cover;
   background-repeat: no-repeat;
 
-  bottom: 0rem;
+  bottom: 0.6rem;
   width: 20rem;
-  height: 3.313rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
+  height: 3.438rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
@@ -484,31 +484,28 @@ body {
   outline: none;
 }
 
-.shadow_container {
-  z-index: 48;
-  background-color: #090a0d; /* 블러 처리된 배경 색상 설정 */
-  
-  width: 25rem;
-  height: 11.5rem; /* 원하는 블러 처리된 요소의 높이 설정 */
-}
-
 .shadow {
   z-index: 50;
   position: fixed;
-  bottom: -3rem;
+  bottom: 0;
   left: 0;
-  right: 0; 
+  right: 0; /* 하단에 위치 */
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  width: 30rem;
-  display: flex;
-  height: 15rem; 
-  background-color: #090a0d; 
-  filter: blur(0.6rem); 
-  box-shadow: 0 0 1.25rem 0 #090a0d;
+  width: 100%;
+  bottom: 0; /* 페이지 하단에 고정 */
+  left: 0;
+  right: 0;
+  margin: 0 auto; /* 수평 가운데 정렬 */
+  display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+  height: 7.25rem; /* 원하는 블러 처리된 요소의 높이 설정 */
+  background-color: #090a0d; /* 블러 처리된 배경 색상 설정 */
+  backdrop-filter: blur(10px); /* 블러 처리 경계선 추가 */
+  box-shadow: 0 0 25px 30px #090a0d, 0 0 60px 45px #090a0d;
 }
 
 /*page3 start*/
