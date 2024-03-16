@@ -627,26 +627,29 @@ body {
   color: white;
   width: 100%;
   height: 100vh;
-  padding: 5rem 0 0 0;
   background-image: url(img/page4_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page4_title > p {
+.page4_title {
   text-align: left;
   font-family: "OpenSans"; /*타이틀 폰트*/
   font-weight: 600;
   font-size: 1.625rem;
-  margin: 0 0 0.438rem 1.5rem;
+  margin: 5.938rem 0 0.438rem 1.5rem;
+  text-shadow: 0 0.125rem 3.125rem rgba(0, 0, 0, 0.5);
 }
 
 .page4_title_sub {
   text-align: left;
-  margin: 0 0 3.5rem 1.5rem;
+  margin: 0 0 3.188rem 1.5rem;
   font-size: 0.625rem;
-  letter-spacing: -0.0625em;
+  letter-spacing: -0.05rem;
   color: #cecece;
+  text-shadow: 0 0.125rem 3.125rem rgba(0, 0, 0, 0.5);
+  vertical-align: text-top;
+  height: 0.875rem;
 }
 
 #Eng {
@@ -661,7 +664,7 @@ body {
 
 .page4_content {
   display: flex;
-  margin-bottom: 5.563rem;
+  margin-bottom: 5.313rem;
 }
 
 .page4_con_text1,
@@ -672,37 +675,28 @@ body {
   font-size: 0.625rem;
   color: #ffffff;
   display: flex;
-  width: 25.5556vw;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.page4_con_text1 {
-  margin-left: 7.7778vw;
-  margin-right: 3.8889vw;
+.page4_con_text1{
+  width: 2.5rem;
+  margin: 0 0.563rem 0 3.438rem;
 }
 
-.page4_con_text3 {
-  margin-right: 7.7778rem;
-  margin-left: 3.8889vw;
+.page4_con_text2{
+  width: 4.7rem;
+  margin: 0 0.563rem 0 0.688rem;
 }
 
-.page4_con_title1 {
-  display: flex;
-  font-family: "NotoSansKR"; /*페이지4 내용 제목 폰트*/
-  font-weight: 600;
-  font-size: 0.844rem;
-  width: 25.5556vw;
-  border-width: 0.038rem;
-  border-style: solid;
-  border-color: #fff8f8;
-  aspect-ratio: 1;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.813rem;
+.page4_con_text3{
+  width: 2.7rem;
+  margin: 0 0.563rem 0 2.438rem;
 }
+
+
+.page4_con_title1,
 .page4_con_title2,
 .page4_con_title3 {
   display: flex;
@@ -721,19 +715,18 @@ body {
 }
 
 .page4_con_title1 {
-  background-color: #ff6356;
-  margin-left: 7.7778vw;
-  margin-right: 3.8889vw;
+  background-color: #ff8080;
+  margin: 0.563rem 0.983rem 0 1.688rem;
 }
 
 .page4_con_title2 {
-  background-color: #4fd473;
+  background-color: #4FC775;
+  margin: 0.563rem 0 0 0;
 }
 
 .page4_con_title3 {
-  background-color: #ffc138;
-  margin-right: 7.7778rem;
-  margin-left: 3.8889vw;
+  background-color: #3E77E9;
+  margin: 0.563rem 1.5rem 0 0.938rem;
 }
 
 .page4_plus_content {
