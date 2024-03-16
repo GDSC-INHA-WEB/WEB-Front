@@ -520,12 +520,12 @@ body {
 
 .page3_title {
   text-align: left;
-  padding-top: 4.5rem;
-  margin: 0 0 2rem 2.125rem;
+  margin: 5.625rem 0 2rem 2.125rem;
   font-family: "OpenSans"; /*타이틀 폰트*/
   font-weight: 600;
   font-size: 1.375rem;
   height: 1.875rem;
+  text-shadow: 0 0.125rem 3.125rem rgba(0, 0, 0, 0.5);
 }
 
 .page3_title > p {
