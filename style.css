@@ -36,14 +36,14 @@
 
 @font-face {
   font-family: "GoogleSans";
-  src: url(landing_page/fonts/Google-Sans-Regular.woff) format("woff");
+  src: url(fonts/Google-Sans-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "GoogleSans";
-  src: url(landing_page/fonts/Google-Sans-Bold.woff) format("woff");
+  src: url(fonts/Google-Sans-Bold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
 }
