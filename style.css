@@ -103,9 +103,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-attachment: scroll;
   background-color: #090a0d;
-  max-width: fit-content;
   top: 0;
   left: 0;
   z-index: -1;
@@ -789,25 +787,21 @@ body {
 .blue_rectangle {
   border-color: rgba(66, 133, 244, 1);
   box-shadow: 0 0 4px 1px rgba(66, 133, 244, 1);
-
 }
 
 .green_rectangle {
   border-color: rgba(52, 168, 83, 1);
   box-shadow: 0 0 4px 1px rgba(52, 168, 83, 1);
-
 }
 
 .yellow_rectangle {
   border-color: rgba(249, 171, 0, 1);
   box-shadow: 0 0 4px 1px rgba(249, 171, 0, 1);
-
 }
 
 .red_rectangle {
   border-color: rgba(234, 67, 53, 1);
   box-shadow: 0 0 4px 1px rgba(234, 67, 53, 1);
-
 }
 
 .image {
