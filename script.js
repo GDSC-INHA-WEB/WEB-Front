@@ -18,7 +18,32 @@ const swiper_background = new Swiper("#background", {
   mousewheel: true,
 
   //slideSpeed
-  speed: 1500,
+  speed: 1000,
+
+  slidesOffsetBefore: 0,
+  slidesOffsetAfeter: 0,
+
+  observer: true,
+  observeParents: true,
+
+  on: {
+    reachEnd: function () {
+      const image = document.getElementById("arrow");
+      image.style.transition = "visibility 0.1s";
+      image.style.visibility = "hidden";
+    },
+    slideChange: function () {
+      const swiper = this;
+      const image = document.getElementById("arrow");
+      if (swiper.isEnd) {
+        image.style.transition = "visibility 0.1s";
+        image.style.visibility = "hidden";
+      } else {
+        image.style.transition = "visibility 0.1s";
+        image.style.visibility = "visible";
+      }
+    },
+  },
 });
 
 const swiper = new Swiper("#page2_swiper", {  
@@ -42,18 +67,3 @@ const swiper = new Swiper("#page2_swiper", {
     }
   }
 });
-
-window.addEventListener("scroll", function () {
-  const image = document.getElementById("arrow");
-  const scrollPosition = window.scrollY;
-  const bottomOfPage = document.body.scrollHeight - window.innerHeight;
-
-  if (scrollPosition >= bottomOfPage - 5) {
-    image.style.transition = "visibility 0.1s";
-    image.style.visibility = "hidden";
-  } else {
-    image.style.transition = "visibility 0.1s";
-    image.style.visibility = "visible";
-  }
-});
-
