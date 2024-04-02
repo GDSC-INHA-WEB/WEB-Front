@@ -16,7 +16,7 @@ const swiper_background = new Swiper("#background", {
   speed: 1500,
 });
 
-const swiper = new Swiper("#page2_swiper", {
+const swiper = new Swiper("#page2_swiper", {  
   // centerSlide
   slidesPerView: "1.1",
   centeredSlides: false,
@@ -30,6 +30,12 @@ const swiper = new Swiper("#page2_swiper", {
 
   //slideSpeed
   speed: 1500,
+
+  breakpoints: {
+    375: {
+      slidesPerView: "1.25"
+    }
+  }
 });
 
 window.addEventListener("scroll", function () {
